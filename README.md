@@ -1,2 +1,3 @@
-# resume
-Resume - Divakar Manivel
+# Divakar Manivel
+
+Hi, Welcome to my online Resume!
