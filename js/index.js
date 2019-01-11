@@ -18,12 +18,28 @@ $(document).ready(function () {
     }, 4000);
 });
 
+function scrollInto(element) {
+    $('html, body').animate({
+        scrollTop: $(element).offset().top - 60
+    }, 'linear');
+}
+
 $(window).scroll(function () {
     $('.skill').filter(checkVisible).addClass('pop-in');
     $('.skill').filter(checkHidden).removeClass('pop-in');
     $('.work').filter(checkVisible).addClass('slide-up');
     $('.work').filter(checkHidden).removeClass('slide-up');
-    // select divs then filter them based on view 
+    $('.contact').filter(checkVisible).addClass('pop-in');
+    $('.contact').filter(checkHidden).removeClass('pop-in');
+    if($(window).scrollTop() > ($('.content-wrapper').height() - $('.header').height())) {
+        if(!$('.header').hasClass('dark-header')){
+        $('.header').addClass('dark-header');
+        }
+    } else {
+        if($('.header').hasClass('dark-header')){
+        $('.header').removeClass('dark-header');
+        }
+    }
 }).scroll();
 
 function checkVisible() {

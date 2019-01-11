@@ -17,9 +17,9 @@
     <div class="header">
         <div style="margin: auto 20px;font-size: 24px;">DM</div>
         <ul class="header-items">
-            <li class="link header-item"><a href="#about" onclick="activateTab()">About</a></li>
-<li class="link header-item"><a href=" #work" onclick="activateTab()">Work</a></li>
-<li class="link header-item"><a href="#contact" onclick="activateTab()">Contact</a></li>
+            <li class="link header-item"><a onclick="scrollInto('#about')">About</a></li>
+            <li class="link header-item"><a onclick="scrollInto('#work')">Work</a></li>
+            <li class="link header-item"><a onclick="scrollInto('#contact')">Contact</a></li>
         </ul>
     </div>
     <div class="content-wrapper">
@@ -30,7 +30,7 @@
                 <span>Scroll Down</span>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 100 100"
                     id="Layer_1" version="1.1" viewBox="0 0 100 100" xml:space="preserve" style="width: 50px;height: 50px;">
-                    <polygon fill="#010101" points="23.1,34.1 51.5,61.7 80,34.1 81.5,35 51.5,64.1 21.5,35 23.1,34.1 " /></svg>
+                    <polygon fill="#010101" points="23.1,34.1 51.5,61.7 80,34.1 81.5,35 51.5,64.1 21.5,35 23.1,34.1" /></svg>
             </div>
         </div>
         <div class="body-wrapper">
@@ -349,7 +349,7 @@
                         </div>
                     </div>
                     <div class="work">
-                        <div class="work-thumb"><img src="./assets/pokemonlogohd.png"/></div>
+                        <div class="work-thumb"><img src="./assets/pokemonlogohd.png" /></div>
                         <div class="work-title">Pokemon Division</div>
                         <div class="work-summary">Pokemon Division is an online MMORPG based on the famous Pokemon
                             gameboy games.</div>
@@ -383,28 +383,44 @@
             </div>
             <div class="contact-wrapper">
                 <h1 id="contact" style="margin: 0;">Contact</h1>
-                    <div class="flex-wrapper" style="padding: 30px;height:220px;">
-                        <div class="contact">
-                            <a href="https://github.com/divakarmanivel" target="_blank">
-                    <svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="50%" height="50%" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z" fill="#fff"></path></svg>
-                    </a>
+                <div class="flex-wrapper" style="padding: 30px;height:220px;">
+                    <div class="contact">
+                        <a href="https://github.com/divakarmanivel" target="_blank">
+                            <svg class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="50%"
+                                height="50%" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                                    fill="#fff"></path>
+                            </svg>
+                        </a>
                     </div>
                     <div class="contact">
                         <a href="https://www.facebook.com/divakarmanivel" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px"
-                            width="50%" height="50%" viewBox="0 0 266.893 266.895" enable-background="new 0 0 266.893 266.895" xml:space="preserve">
-                            <path id="Blue_1_" fill="#3C5A99" d="M248.082,262.307c7.854,0,14.223-6.369,14.223-14.225V18.812  c0-7.857-6.368-14.224-14.223-14.224H18.812c-7.857,0-14.224,6.367-14.224,14.224v229.27c0,7.855,6.366,14.225,14.224,14.225  H248.082z" />
-                            <path id="f" fill="#FFFFFF" d="M182.409,262.307v-99.803h33.499l5.016-38.895h-38.515V98.777c0-11.261,3.127-18.935,19.275-18.935  l20.596-0.009V45.045c-3.562-0.474-15.788-1.533-30.012-1.533c-29.695,0-50.025,18.126-50.025,51.413v28.684h-33.585v38.895h33.585  v99.803H182.409z" />
-                        </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                id="Layer_1" x="0px" y="0px" width="50%" height="50%" viewBox="0 0 266.893 266.895"
+                                enable-background="new 0 0 266.893 266.895" xml:space="preserve">
+                                <path id="Blue_1_" fill="#3C5A99" d="M248.082,262.307c7.854,0,14.223-6.369,14.223-14.225V18.812  c0-7.857-6.368-14.224-14.223-14.224H18.812c-7.857,0-14.224,6.367-14.224,14.224v229.27c0,7.855,6.366,14.225,14.224,14.225  H248.082z" />
+                                <path id="f" fill="#FFFFFF" d="M182.409,262.307v-99.803h33.499l5.016-38.895h-38.515V98.777c0-11.261,3.127-18.935,19.275-18.935  l20.596-0.009V45.045c-3.562-0.474-15.788-1.533-30.012-1.533c-29.695,0-50.025,18.126-50.025,51.413v28.684h-33.585v38.895h33.585  v99.803H182.409z" />
+                            </svg>
                         </a>
                     </div>
                     <div class="contact">
                         <a href="https://www.linkedin.com/in/divakarmanivel" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 32 32" height="50%" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="50%" xml:space="preserve"><g><path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z" fill="#007BB5"></path><rect fill="#FFFFFF" height="14" width="4" x="7" y="11"></rect><path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7 C25,14,24.479,11,20.499,11z" fill="#FFFFFF"></path><circle cx="9" cy="8" fill="#FFFFFF" r="2"></circle></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                enable-background="new 0 0 32 32" height="50%" id="Layer_1" version="1.0" viewBox="0 0 32 32"
+                                width="50%" xml:space="preserve">
+                                <g>
+                                    <path d="M32,30c0,1.104-0.896,2-2,2H2c-1.104,0-2-0.896-2-2V2c0-1.104,0.896-2,2-2h28c1.104,0,2,0.896,2,2V30z"
+                                        fill="#007BB5"></path>
+                                    <rect fill="#FFFFFF" height="14" width="4" x="7" y="11"></rect>
+                                    <path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7 C25,14,24.479,11,20.499,11z"
+                                        fill="#FFFFFF"></path>
+                                    <circle cx="9" cy="8" fill="#FFFFFF" r="2"></circle>
+                                </g>
+                            </svg>
                         </a>
                     </div>
                 </div>
-                <span>Email: <a style="color:#fff;" href="mailto:lumia1320@live.in">lumia1320@live.in</a></span>
+                <span>Email: <a style="color:#909090;" href="mailto:lumia1320@live.in">lumia1320@live.in</a></span>
             </div>
         </div>
     </div>
