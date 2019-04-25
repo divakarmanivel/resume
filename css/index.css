@@ -115,8 +115,8 @@ body {
   animation: Gradient 15s ease infinite;
   padding: 20px;
   text-align: center;
-  background-image: url(../assets/profile.jpg);
-  background-size: cover;
+  background-image: url(../assets/profile-pic.jpg);
+  background-size: contain;
   color: #000;
 }
 
@@ -415,4 +415,11 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: #02aab0;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-wrapper {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
