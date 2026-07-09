@@ -1,0 +1,14 @@
+{
+  "name": "divakarmanivel-portfolio",
+  "private": true,
+  "scripts": {
+    "generate:favicon": "node scripts/generate-favicon.mjs",
+    "images:webp": "node scripts/convert-images.mjs",
+    "icons:fetch": "node scripts/fetch-icons.mjs",
+    "build:assets": "npm run generate:favicon && npm run images:webp"
+  },
+  "devDependencies": {
+    "png-to-ico": "^2.1.8",
+    "sharp": "^0.34.5"
+  }
+}
